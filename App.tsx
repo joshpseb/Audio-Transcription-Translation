@@ -249,7 +249,7 @@ const App: React.FC = () => {
 
           <div className="space-y-4">
             <h2 className="text-2xl font-semibold text-sky-400 flex items-center">
-              {inputMode === 'upload' ? <FileAudioIcon className="w-7 h-7 mr-3 text-sky-500" /> : <RecordIcon className="w-7 h-7 mr-3 text-sky-500" />}
+              {inputMode === 'upload' ? <FileAudioIcon className="w-6 h-6 mr-3 sky-500" /> : <RecordIcon className="w-7 h-7 mr-3 text-sky-500" />}
               2. Provide Audio
             </h2>
             <div className="flex space-x-2 mb-4 border-b border-slate-700 pb-1">
@@ -289,7 +289,7 @@ const App: React.FC = () => {
                     disabled={isLoading}
                     className="w-full flex items-center justify-center bg-green-600 hover:bg-green-500 disabled:bg-slate-600 text-white font-semibold py-3 px-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-300"
                   >
-                    <MicrophoneIcon className="w-5 h-5 mr-2" /> Start Recording
+                    <MicrophoneIcon className="w-5 h-5 mr-2 white" /> Start Recording
                   </button>
                 )}
                 {isRecording && (
@@ -348,7 +348,7 @@ const App: React.FC = () => {
               </>
             ) : (
               <>
-                <TranscribeIcon className="w-5 h-5 mr-2" />
+                <TranscribeIcon className="w-5 h-5 mr-2 text-white" />
                 Transcribe & Translate Audio
               </>
             )}

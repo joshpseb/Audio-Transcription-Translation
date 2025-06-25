@@ -40,7 +40,7 @@ const ResultBox: React.FC<{
           className={`p-1.5 text-slate-400 hover:text-sky-400 transition-colors rounded-md hover:bg-slate-600
                       ${copied ? 'text-green-400 hover:text-green-300' : ''}`}
         >
-          <ClipboardCopyIcon className="w-5 h-5" />
+          <ClipboardCopyIcon className="w-6 h-6 text-sky-500" />
         </button>
       </div>
       {isEditable ? (
@@ -48,7 +48,7 @@ const ResultBox: React.FC<{
           value={text || ''}
           onChange={(e) => onChange?.(e.target.value)}
           placeholder="Transcription will appear here..."
-          className="w-full text-slate-300 whitespace-pre-wrap break-words min-h-[120px] max-h-60 overflow-y-auto p-3 bg-slate-750 rounded-md scrollbar-thin scrollbar-thumb-slate-500 scrollbar-track-slate-800 focus:ring-2 focus:ring-sky-500 focus:border-sky-500 outline-none resize-y"
+          className="w-full text-slate-300 whitespace-pre-wrap break-words min-h-[120px] max-h-60 overflow-y-auto p-3 bg-slate-800 rounded-md scrollbar-thin scrollbar-thumb-slate-500 scrollbar-track-slate-800 focus:ring-2 focus:ring-sky-500 focus:border-sky-500 outline-none resize-y"
           aria-label={title}
         />
       ) : (

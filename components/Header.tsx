@@ -1,6 +1,4 @@
-
 import React from 'react';
-import { SparklesIcon } from './IconComponents';
 
 export const Header: React.FC = () => {
   return (

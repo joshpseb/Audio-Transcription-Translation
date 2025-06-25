@@ -1,5 +1,6 @@
 import React, { useCallback, useState } from 'react';
-import { UploadCloudIcon } from './IconComponents';
+import { UploadIcon } from './IconComponents';
+
 
 interface AudioFileInputProps {
   onChange: (file: File | null, dataUrl: string | null) => void;
@@ -72,7 +73,7 @@ export const AudioFileInput: React.FC<AudioFileInputProps> = ({ onChange, disabl
       aria-disabled={disabled}
     >
       <div className="flex flex-col items-center justify-center pt-5 pb-6 text-center">
-        <UploadCloudIcon className={`w-12 h-12 mb-3 ${isDragging && !disabled ? 'text-sky-400' : 'text-slate-500'}`} />
+        <UploadIcon className="w-10 h-10 mb-3" />
         {fileName && !disabled ? (
           <>
             <p className="mb-2 text-sm text-sky-400 font-semibold">{fileName}</p>
