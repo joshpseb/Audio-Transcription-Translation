@@ -1,0 +1,8 @@
+{
+  "name": "Gemini Audio Translator",
+  "description": "Upload an audio file or record audio, and this application will transcribe it and translate the transcription into English using the Gemini API. The transcription can be edited.",
+  "requestFramePermissions": [
+    "microphone"
+  ],
+  "prompt": ""
+}
