@@ -13,6 +13,8 @@ import { transcribeAudio, translateText } from './services/geminiService';
 import { SUPPORTED_LANGUAGES } from './constants';
 import type { LanguageOption } from './types';
 
+import { Analytics } from "@vercel/analytics/next"
+
 type InputMode = 'upload' | 'record';
 
 const App: React.FC = () => {
@@ -388,6 +390,7 @@ const App: React.FC = () => {
       <footer className="w-full text-center py-6 text-sm text-slate-500">
         Powered by Gemini API & React.
       </footer>
+      <Analytics />
     </div>
   );
 };
