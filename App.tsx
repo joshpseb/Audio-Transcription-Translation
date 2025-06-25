@@ -13,7 +13,7 @@ import { transcribeAudio, translateText } from './services/geminiService';
 import { SUPPORTED_LANGUAGES } from './constants';
 import type { LanguageOption } from './types';
 
-import { Analytics } from "@vercel/analytics/next"
+import { Analytics } from "@vercel/analytics/react"
 
 type InputMode = 'upload' | 'record';
 
