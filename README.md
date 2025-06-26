@@ -1,14 +1,4 @@
-# Run and deploy your AI Studio app
+# Audio Transcription and Translation App
 
-This contains everything you need to run your app locally.
-
-## Run Locally
-
-**Prerequisites:**  Node.js
-
-
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+Transcribes audio from a different language and translates to English using Gemini API.
+Audio can be inputted as a file or a live recording, and transcriptions can be edited as needed.
